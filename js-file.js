@@ -38,6 +38,8 @@ function btnDisable() {
     buttonOps.forEach(item => {
         item.classList.toggle('no-pointer')
     })
+
+    buttonEqual.classList.toggle('no-pointer')
 }
 
 // Operator Function -  For the 'EQUAL' sign
@@ -125,6 +127,9 @@ console.log(nums1,nums2,operator);
 numButtons.forEach(item => {
     item.addEventListener('click', () => {
         displayValues.push(item.textContent)
+        buttonOps.forEach(item => {
+            item.classList.remove('no-pointer')
+        })
         isOperator(item)
     })
 })
@@ -140,6 +145,9 @@ buttonClr.addEventListener('click', () => {
     if (displayCalc.textContent == "Cannot divide by zero...") {
         btnDisable()
     }
+    buttonOps.forEach(item => {
+        item.classList.add('no-pointer')
+    })
     clrAll()
 })
 
