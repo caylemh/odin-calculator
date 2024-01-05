@@ -19,6 +19,7 @@ h1 {
 }
 
 body {
+    background: radial-gradient(#162731, #1e3646);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,3 +166,14 @@ body {
     opacity: 0.5;
     pointer-events: none;
 }
+
+/* Fade in and out Animation */
+.fade-in-out {
+    animation: fade 0.01s ease-in-out infinite;
+  }
+  
+  @keyframes fade {
+    from {opacity: 0.9;}
+    to {opacity: 1;}
+  }
+  
