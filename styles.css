@@ -46,8 +46,9 @@ body {
 }
 
 .display {
+    width: 382px;
     margin-bottom: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border-radius: 0.8rem;
     box-shadow: 0 0 25px var(--calculator-equal) inset;
     background-color: var(--calculator-display);
@@ -56,6 +57,7 @@ body {
 .calculations {
     font-size: 1.5rem;
     text-align: end;
+    text-wrap: wrap;
     text-shadow:0 5px 5px var(--calculator-main);
     color: var(--calculator-text);
 }
@@ -64,6 +66,7 @@ body {
     font-size: 3rem;
     font-weight: 700;
     text-align: end;
+    text-wrap: wrap;
     text-shadow:0 5px 5px var(--calculator-main);
     color: var(--calculator-text);
 }
@@ -156,4 +159,9 @@ body {
 .clear:hover {
     box-shadow: none;
     background-color: #b33333;
+}
+
+.no-pointer {
+    opacity: 0.5;
+    pointer-events: none;
 }
