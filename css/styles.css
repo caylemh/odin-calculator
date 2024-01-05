@@ -121,7 +121,7 @@ body {
     cursor: pointer;
 }
 
-.btns {
+.numbtns, .opsbtns {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +143,7 @@ body {
     border-radius: 0.4rem;
 }
 
-.btns:hover {
+.numbtns:hover, .opsbtns:hover {
     box-shadow: none;
     background-color: #6fa9b4;
 }
